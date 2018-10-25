@@ -1,0 +1,9 @@
+{"_id":{"$oid":"5a34cf6f28bdcba81ace8b29"},"email":"test@gmail.com","username":"testun","password":"$2a$10$XUfOxka225lP1.b/ERD8kO54aVMh.fgAb0AAApL99h3Mj9wUKImDC","type":"student","__v":0}
+{"_id":{"$oid":"5a48ffe9120b2578135655a2"},"email":"john@gmail.com","username":"john","password":"$2a$10$RfieFFWCSW7NljhbBRPcGuaG8PovrpRfxwMtqtCo8tyTHZCbVhjxO","type":"instructor","__v":0}
+{"_id":{"$oid":"5a492b7e7827f824099ac95d"},"email":"alex@gmail.com","username":"alex","password":"$2a$10$WWhOlr0ZM.v/NnHh94z4kuup2MI.vUgko/gmx.ySGX17V1X6XvcIW","type":"instructor","__v":0}
+{"_id":{"$oid":"5a4930b17827f824099ac967"},"email":"ss@gmail.com","username":"ssb","password":"$2a$10$6HAir.mONIzU1lImmCWULu9hSV1o8uRqkKoUmUDcWZ5dF0R/3GVLO","type":"instructor","__v":0}
+{"_id":{"$oid":"5a4939757827f824099ac971"},"email":"shyam@gmail.com","username":"shyam","password":"$2a$10$gmXEvDjj18F.zK3rCpjFweMqK15HEdcMmRUZ8.WwL58HL.TosU0ym","type":"instructor","__v":0}
+{"_id":{"$oid":"5a493c567827f824099ac97b"},"email":"shefali@gmail.com","username":"shefali","password":"$2a$10$8BY8rEs9RYas3k9WywuC2uiqhUCzf5LlpjJhcQ2FZb45vB5z3ZsES","type":"instructor","__v":0}
+{"_id":{"$oid":"5a4940ab7827f824099ac985"},"email":"johnb@gmail.com","username":"JohnBura","password":"$2a$10$IlPqGLXneHuKDH8F/fdY0u/OUhV2jwuMWEY2pfp9h4I7HIJMmLGqG","type":"instructor","__v":0}
+{"_id":{"$oid":"5a4944577827f824099ac991"},"email":"maxmilian@gmail.com","username":"maxmilian","password":"$2a$10$Elh9BM37om5jm4CX0jJoX.1Lx3GymfEj9.vykGg.O.S2orQ6kym12","type":"instructor","__v":0}
+{"_id":{"$oid":"5a4949877827f824099ac99f"},"email":"michel@gmail.com","username":"michel","password":"$2a$10$VKcJ.wQK5PooZ5VDVmwVnuRmtLac.Er.XYk.j5CC/kFaWzqzTH0KO","type":"instructor","__v":0}

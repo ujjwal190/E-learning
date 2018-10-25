@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alison</title>
+<link rel="stylesheet" type="text/css" href="/stylesheets/kickstart.css" media="all" />
+
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="all" / >                 
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/kickstart.js"></script>  
+<style>
+		.card-block{
+			background-color:#A9A9A980;
+		}
+		
+        #messages{
+			height:300px;
+		}
+		#preloader1{
+			position:fixed;
+			left:0;
+			right:0;
+			z-index:9;
+			width:100%;
+			height:100%;
+			overflow:visible;
+			background:white url('/images/s12.gif') no-repeat center center;
+		}
+    </style> 
+    <script>
+				var msg = 'Welcome To Alison Learning Solution'
+				var clrs = new Array("red","green","blue","pink","yellow","black","gray","navy","cyan","magenta");
+				var num_of_clrs=clrs.length
+				function changeColor()
+				{
+					for (i=0; i<msg.length; i++)
+					{
+						var index=parseInt(Math.random()*num_of_clrs)
+						var obj=document.getElementById('colortext' + i)
+						obj.style.color=clrs[index]
+					}
+					setTimeout("changeColor()",200)		
+				}
+		</script>                    
+</head>
+<body>
+	<div id="preloader">
+		
+	</div>
+
+<!-- Menu Horizontal -->
+<ul class="menu">
+<li class="current"><a href="/"><img src="/images/l1.png"></a></li>
+<li style="top: -8px; font-size:large;font-weight:bold;"><a href="/classes">Classes</a></li>
+<li class="wrap">
+<input type="text" class="searchTerm" placeholder="What are you looking for?"/>
+      <button type="submit" class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+ </li>
+
+<li  style="left:335px; top: -8px;">
+				<body onload="changeColor()">
+	
+		<div id="text" style="font-size:larger; font-family: 'cityscape font'; font-weight:bold;text-align:center; padding-top:18px;">
+			<script>
+			for (var i=0; i<msg.length; i++)
+			{
+				document.write("<span id ='colortext" + i + "'>" + msg.charAt(i) + "</span>");
+			}
+			</script>
+		</div>
+
+	</body>
+		
+				</li>
+</ul>
+
+
+
+
+<div class="grid">
+<div class="col_12">
+	<div class="col_9">
+		{{#if success_msg}}
+			<div class="notice success"><i class="icon-remove-sign icon-large"></i> {{success_msg}}
+				<a href="#close" class="icon-remove"></a>
+			</div>
+		{{/if}}
+
+		{{#if error_msg}}
+			<div class="notice error"><i class="icon-remove-sign icon-large"></i> {{error_msg}}
+				<a href="#close" class="icon-remove"></a>
+			</div>
+		{{/if}}
+
+		{{#if error}}
+			<div class="notice error"><i class="icon-remove-sign icon-large"></i> {{error}}
+				<a href="#close" class="icon-remove"></a>
+			</div>
+		{{/if}}
+		{{{body}}}
+	</div>
+	
+	<div class="col_3" id="log1">
+		{{>login}}
+	</div>
+	
+
+
+	<div class="headline col_12">
+	<h1>Effective learning at Alison</h1>
+	
+</div><!-- END SECONDARY HEADLINE -->
+
+<div class="col_8">
+	<!-- Slideshow -->
+	
+		<ul class="slideshow" width="600" height="350">
+		<li><img src="/images/e1.jpeg" width="600" height="350" /></li>
+		<li><img src="/images/e4.jpg" width="600" height="350" /></li>
+		<li><img src="/images/e4.jpg" width="600" height="350" /></li>
+		</ul>
+	
+
+</div>
+
+<!-- END SLIDESHOW -->
+	
+
+
+
+	<hr />
+		
+		{{>classes}}
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div><!-- END GRID -->
+
+<!-- ===================================== START FOOTER ===================================== -->
+<hr />
+<div class="col_12 column footer1">
+	
+	<br />
+	<center><p style="font-family:harrington;font-size:35px;">Alison learning Solution</p></center>
+	<div class="col_9 column">
+
+
+	
+	
+			<br>
+			<div class="col_4 column">
+				<h4>COMPANY INFORMATION</h4>
+				<ul>
+					<a href="#">About Alison</a><br>
+					<a href="">Customer Speak</a><br>
+					<a href="">FAQs</a><br>
+					<a href="">Temrs & Conditions</a><br>
+					<a href="">Privacy Policy</a><br>
+					<a href="">Contact Us</a><br>
+				</ul>
+				
+			</div>
+			<div class="col_4 column">
+				<h4>LEARNING <br>@ ALISON</h4>
+				<ul>
+					<a href="">Our Webblog</a><br>
+					<a href="">Teach For Us</a><br>
+					<a href="">Affiliates</a><br>
+					<a href="">Opportunities</a><br>
+					
+				</ul>
+				
+			</div>
+			<div class="col_4 column">
+				<h4>YOUR ALISON ACCOUNT</h4>
+				<ul>
+					<a href="/users/register">Register at Alison</a><br>
+					<a href="">Returns & Refund</a><br>
+					<a href="">Your Certificate</a><br>
+					<a href="">Check Your Reward Points</a><br>
+					
+				</ul>
+				
+			</div>
+			<div class="col1 ">
+				<h4 style="padding: 20px;">NEWSLETTER</h4>
+				<ul>
+
+					<input type="text" id="email"  placeholder=" your email" >
+					<br/>
+					<br/>
+					<a href=""><input value="subscribe" type="button" class="red"></a>
+							
+					
+				</ul>
+				
+			</div>
+			
+		<center><p>&nbsp;Alison Learning Solution Pvt.Ltd.All Rights Reserved.</p></center>		
+</div>
+
+</div>
+
+
+
+
+
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+			<script>
+				jQuery(document).ready(function($){
+					$(window).load(function(){
+						$('#preloader').delay(300).fadeOut('slow',function(){
+							$(this).remove();
+						});
+					});
+				});
+			</script>
+	</body>
+</html>
